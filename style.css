@@ -1,0 +1,159 @@
+body, html {
+    padding: 0;
+    margin: 0;
+    font-family: 'Lucida Sans', sans-serif;   
+}
+
+.header {
+
+    width: 100%; /*header takes the whole screen*/
+    
+    background: purple;
+    background: linear-gradient(90deg, #06165f 0%, #3c00bc 100%);
+}
+
+.header_inner {
+    display: flex;
+    align-items: center; /*puts header content on center*/
+    flex-wrap:wrap;
+    justify-content: center; 
+    padding: 20px;
+    margin:auto; /*centers it */
+    max-width: 1200px;
+    gap: 1rem;
+}
+
+@media screen and (min-width: 385px) {
+    .header_inner {
+        justify-content: space-between;
+        padding: 0px 20px;
+    }
+    
+}
+
+.header_logo {
+    color: white;
+    margin-top: 0px;
+    
+}
+
+@media screen and (min-width: 385px) {
+    .header_logo {
+        margin-top: 20px;
+    }
+    
+}
+
+.header_btnGrp {
+   
+}
+
+.header_button {
+    padding: 5px 10px;
+    border-radius: 20px;
+    border: 0;
+}
+
+.header_button:hover {
+    cursor: pointer;
+    opacity: 0.75;
+}
+
+.header_button--submit {
+    background: orange;
+    color: white
+}
+
+.header_button--signIn {
+    background: green;
+    color: white
+}
+
+/* General */
+.mainContainer{
+    max-width: 1000px;   /*means that;s the maximum size, can get cutoff*/
+    margin: auto;
+}
+
+
+/* search */
+.search_wrapper {
+    position: relative;
+    max-width: 350px;
+    width: 100%;
+}
+
+.search {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 20px;
+    background-color: #e8eaf6;
+}
+
+.search_title {
+    text-align: center;
+    margin-bottom: 10px;  /*reduce margin underneath H1*/
+}
+
+
+.search_input {
+    padding: 8px 30px 8px 8px; /*padding top, right, bottom, left, also allows space to avoid reaching the icon that will later be moved*/
+    border-radius: 20px; /*thins out the border of the circle*/
+    /*min-width: 300px; lengths out the circle search box // wasnt needed anymore*/
+    width: 100%;
+    border: 1px solid lightgray; /*adjust the 'boldness of the search box*/
+}
+
+.search_searchIcon {
+    position: absolute; /*means it can move from where it is*/
+    top: 5px;
+    right: 10px;
+}
+
+/* faq */
+.faq {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 80px auto;
+    max-width: 1200px;
+}
+
+.faq_list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    list-style-type: none; /*remove bullet points*/
+    padding: 20px;
+}
+
+.faq_list-item {
+    min-height: 8rem; /*1rem is about 16 px*/
+    border-radius: 5px; /*rounds the boxes*/
+    width: 300px;
+    gap: 2rem; /*pads all around*/
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+/* footer */
+.footer {
+    padding: 20px;
+    background: linear-gradient(90deg, #182848 0%, #3c00bc 100%);
+}
+
+
+
+.footer_content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    max-width: 200px;
+    color: white;
+    justify-content: space-between;
+    max-width: 1200px;
+    width: 100%;
+}
